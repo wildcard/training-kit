@@ -51,8 +51,8 @@ jobs:
 
       - name: Build with Jekyll
         run: |
-          # Build with baseurl as the fork owner's username for GitHub Pages
-          bundle exec jekyll build --baseurl "/${{ github.event.pull_request.head.repo.name }}"
+          # Build with baseurl including pr path for correct asset/link URLs
+          bundle exec jekyll build --baseurl "/${{ github.event.pull_request.head.repo.name }}/pr-${{ github.event.pull_request.number }}"
         env:
           JEKYLL_ENV: production
 
