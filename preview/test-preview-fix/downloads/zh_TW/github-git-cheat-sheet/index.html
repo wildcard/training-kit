@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+  <meta charset="utf-8">
+  <link href="/training-kit/preview/test-preview-fix/feed.xml" type="application/atom+xml" rel="alternate" title="GitHub Cheatsheets Feed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="/training-kit/preview/test-preview-fix/assets/css/index.css">
+
+  
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>GitHub Git 速查清單 - GitHub Cheatsheets</title>
+
+
+
+
+
+
+<meta name="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="GitHub Cheatsheets">
+<meta property="og:title" content="GitHub Git 速查清單">
+
+
+  <link rel="canonical" href="https://training.github.com/training-kit/preview/test-preview-fix/downloads/zh_TW/github-git-cheat-sheet/">
+  <meta property="og:url" content="https://training.github.com/training-kit/preview/test-preview-fix/downloads/zh_TW/github-git-cheat-sheet/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+</head>
+
+
+  <body style="min-height: 100vh;" class="d-flex flex-column">
+    
+
+
+<div class="bg-blue-darker py-3 f5 flex-none color-fg-on-emphasis">
+  <header class="container-lg p-responsive site-header js-site-header d-block clearfix">
+    <a class="no-underline color-fg-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="/training-kit/preview/test-preview-fix/" aria-label="Git Cheat Sheets Main Page">
+      <div class="mr-3"><svg class="octicon octicon-mark-github" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></div>
+      
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-site-header-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg class="octicon octicon-three-bars" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+    </button>
+
+    <nav class="site-header-menu float-none float-md-right py-1 mt-4 mt-md-0">
+      <ul class="d-block d-md-flex list-style-none">
+        
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+    <main class="site-content">
+      <div class="container-lg p-responsive">
+  <div class="markdown-body d-flex flex-wrap gutter">
+    
+<div class="col-md-6">
+
+<h2 id="安裝-git">安裝 Git</h2>
+
+<h3 id="github-桌面版">GitHub 桌面版</h3>
+<p><a href="https://desktop.github.com">desktop.github.com</a></p>
+
+<h3 id="git-通用平台版">Git 通用平台版</h3>
+<p><a href="https://git-scm.com">git-scm.com</a></p>
+
+<h2 id="git-操作設定">Git 操作設定</h2>
+<p>設定使用者在操作本機端 Git 的通用配置</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.name "[name]"</code></p>
+
+<p>設定本機端 Git 使用者的名稱</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.email "[email address]"</code></p>
+
+<p>設定本機端 Git 使用者的電子郵件</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git config --global color.ui auto</code></p>
+
+<p>啟用本機端使用命令列時的彩色輸出模式，提高使用 Git 的可讀性</p>
+
+<h2 id="分支">分支</h2>
+
+<p>分支在使用者操作 Git 時扮演重要的角色。使用者提出的任何提交 (commit) 都會當前所在的分支上。使用 <code class="language-plaintext highlighter-rouge">git status</code> 可查看當前所在的分支。</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git branch [branch-name]</code></p>
+
+<p>建立一個新的分支</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git switch -c [branch-name]</code></p>
+
+<p>切換到指定分支，使用者的工作目錄會基於該分支更新</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git merge [branch]</code></p>
+
+<p>將指定分支的檔案歷程合併到當前分支。相同的結果經常會透過合併請求 (Pull Request) 達成，但此指令仍在本機端扮演重要的角色。</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git branch -d [branch-name]</code></p>
+
+<p>刪除指定分支</p>
+
+
+</div>
+
+<div class="col-md-6">
+
+<h2 id="建立-git-倉儲">建立 Git 倉儲</h2>
+
+<p>使用者可透過兩種途徑來建立一個 Git 倉儲：第一，在本機端建立後，再推送到 GitHub；第二，取得該 Git 倉儲連結後，複製 (clone) 一份到本機端。</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git init</code></p>
+
+<p>使用者可透過 <code class="language-plaintext highlighter-rouge">git init</code> 指令，在本機端建立一個作為 Git 倉儲的資料夾目錄，並可透過以下指令建立本機端 Git 倉儲與 GitHub 倉儲的連結。</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git remote add origin [url]</code></p>
+
+<p>指定一個 URL 為 <code class="language-plaintext highlighter-rouge">[url]</code> 的遠端倉儲 <code class="language-plaintext highlighter-rouge">origin</code> 作為本機端 Git 倉儲的連結點。</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git clone [url]</code></p>
+
+<p>複製 (clone) 一個存在 GitHub 上的倉儲到本機端，其中包含所有檔案、分支與提交　(commits)</p>
+
+<h2 id="gitignore-檔案">.gitignore 檔案</h2>
+
+<p>使用者在一些情形下不希望 Git 追蹤部分檔案的狀態，這個時候可透過名為 <code class="language-plaintext highlighter-rouge">.gitignore</code> 的檔案達成，使用者可以在 <a href="https://github.com/github/gitignore">github.com/github/gitignore</a> 找到有參考價值的 <code class="language-plaintext highlighter-rouge">.gitignore</code> 範本。</p>
+
+<h2 id="同步更改">同步更改</h2>
+
+<p>將本機端 Git 倉儲與遠端 GitHub 倉儲進行狀態同步</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git fetch</code></p>
+
+<p>下載遠端分支的所有歷史</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git merge</code></p>
+
+<p>將遠端分支合併到當前本機端的分支</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git push</code></p>
+
+<p>將當前本機端的分支上傳到 GitHub</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git pull</code></p>
+
+<p>讀取 GitHub 遠端分支的對應提交，來更新使用者本機端當前的分支。當使用者接連著下達 <code class="language-plaintext highlighter-rouge">git fetch</code> 和 <code class="language-plaintext highlighter-rouge">git merge</code> 的指令，效果等同於直接下達 <code class="language-plaintext highlighter-rouge">git pull</code> 指令。</p>
+
+
+</div>
+<div class="clearfix"></div>
+
+<div class="col-md-6">
+
+<h2 id="管理-git-追蹤狀態變更">管理 Git 追蹤狀態變更</h2>
+
+<p>檢視專案檔案的變更歷史</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git log</code></p>
+
+<p>列出當前分支的變更歷史</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git log --follow [file]</code></p>
+
+<p>列出指定檔案的變更歷史，包括重新命名</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git diff [first-branch]...[second-branch]</code></p>
+
+<p>顯示兩個分支的差異處</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git show [commit]</code></p>
+
+<p>顯示指定提交的詮釋資料與內容變化</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git add [file]</code></p>
+
+<p>對檔案進行快照，以讓 Git 納入版本控制</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git commit -m "[descriptive message]"</code></p>
+
+<p>將快照正式納入 Git 的版本控制歷史</p>
+
+<h2 id="修復提交">修復提交</h2>
+
+<p>清除錯誤提交並修正</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git reset [commit]</code></p>
+
+<p>復原所有 <code class="language-plaintext highlighter-rouge">[commit]</code> 後的提交，並在本機端保留該復原內容</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git reset --hard [commit]</code></p>
+
+<p>復原所有 <code class="language-plaintext highlighter-rouge">[commit]</code> 後的提交，並在本機端捨棄該復原內容</p>
+
+<blockquote>
+  <p>特別注意！修改版本控制紀錄可能造成不好的後果。如果你需要修改遠端 GitHub 既有的提交，請小心操作。如果你需要幫助，可在社群 <a href="https://github.community">github.community</a> 提出，或尋求<a href="https://support.github.com/">支援</a>。</p>
+</blockquote>
+
+
+</div>
+
+<div class="col-md-6">
+
+<h2 id="術語清單">術語清單</h2>
+
+<ul>
+  <li>
+<strong>git</strong>: 一個開源的分散式版本控制系統</li>
+  <li>
+<strong>GitHub</strong>: 一個讓使用者在使用本機端 Git 時，可進行遠端託管和協作管理的平台</li>
+  <li>
+<strong>commit</strong>: 提交，在 Git 的架構中作為一個物件，存放著當前倉儲狀態的快照，並以 SHA 形式存在</li>
+  <li>
+<strong>branch</strong>: 分支，通常用於區分 commit 的用途與專案的目標</li>
+  <li>
+<strong>clone</strong>: 複製，透過 <code class="language-plaintext highlighter-rouge">clone</code> 可讓使用者複製遠端倉儲到本機端，並進行後續的一系列操作</li>
+  <li>
+<strong>remote</strong>: 遠端，一個可被專案成員或大眾所觸及的遠端倉儲，有權限的使用者將會提交他們的檔案變更到此倉儲</li>
+  <li>
+<strong>fork</strong>: 副本，使用者可建立一個被其他使用者所擁有之遠端倉儲副本</li>
+  <li>
+<strong>pull request</strong>: 合併請求，當使用者變更倉儲內容後，需要透過合併請求，尋求倉儲所有人的同意，方能成為該倉儲的正式內容；透過合併請求，可讓提交人、倉儲關係人進行討論與測試</li>
+  <li>
+<strong>HEAD</strong>: 表示使用者當前的工作目錄。使用者可透過 <code class="language-plaintext highlighter-rouge">git checkout</code> 切換到不同的分支、標記 (tags) 或提交，<code class="language-plaintext highlighter-rouge">HEAD</code> 也會因此改變</li>
+</ul>
+
+
+</div>
+<div class="clearfix"></div>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer class="color-bg-subtle border-top py-4 color-fg-muted text-center mt-6 flex-none">
+  <span aria-label="Made with love by GitHub and friends">
+    <a href="https://github.com/github/training-kit" class="color-fg-default mb-2">
+      Made with <img class="emoji" title=":heart:" alt=":heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> by <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20">s and friends
+    </a>
+  </span>
+  <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
+    <a href="/training-kit/preview/test-preview-fix/feed.xml" aria-label="Feed xml" class="d-flex flex-items-center color-fg-muted text-uppercase mr-4">
+      <div class="d-flex mr-1"><svg class="octicon octicon-rss" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.002 2.725a.75.75 0 01.797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 11-1.497.098 10.502 10.502 0 00-9.776-9.776.75.75 0 01-.7-.798zM2 13a1 1 0 112 0 1 1 0 01-2 0zm.84-5.95a.75.75 0 00-.179 1.489c2.509.3 4.5 2.291 4.8 4.8a.75.75 0 101.49-.178A7.003 7.003 0 002.838 7.05z"></path></svg></div>
+      
+    </a>
+    <a href="https://github.community" class="d-flex flex-items-center color-fg-muted text-uppercase"><div class="d-flex mr-1"><svg class="octicon octicon-organization" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"></path></svg></div> Community</a>
+  </div>
+
+  <p>© 2025 GitHub, Inc.   <a href="https://jekyllrb.com" rel="nofollow" class="color-fg-default">Jekyll</a> &amp;
+    <a href="https://github.com/primer/primer-css" rel="nofollow" class="color-fg-default">Primer</a>.
+  </p>
+</footer>
+
+  </body>
+</html>

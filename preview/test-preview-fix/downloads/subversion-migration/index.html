@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+  <meta charset="utf-8">
+  <link href="/training-kit/preview/test-preview-fix/feed.xml" type="application/atom+xml" rel="alternate" title="GitHub Cheatsheets Feed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="/training-kit/preview/test-preview-fix/assets/css/index.css">
+
+  
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Subversion to Git Migration - GitHub Cheatsheets</title>
+
+
+
+
+
+
+<meta name="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="GitHub Cheatsheets">
+<meta property="og:title" content="Subversion to Git Migration">
+
+
+  <link rel="canonical" href="https://training.github.com/training-kit/preview/test-preview-fix/downloads/subversion-migration/">
+  <meta property="og:url" content="https://training.github.com/training-kit/preview/test-preview-fix/downloads/subversion-migration/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+</head>
+
+
+  <body style="min-height: 100vh;" class="d-flex flex-column">
+    
+
+
+<div class="bg-blue-darker py-3 f5 flex-none color-fg-on-emphasis">
+  <header class="container-lg p-responsive site-header js-site-header d-block clearfix">
+    <a class="no-underline color-fg-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="/training-kit/preview/test-preview-fix/" aria-label="Git Cheat Sheets Main Page">
+      <div class="mr-3"><svg class="octicon octicon-mark-github" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></div>
+      
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-site-header-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg class="octicon octicon-three-bars" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+    </button>
+
+    <nav class="site-header-menu float-none float-md-right py-1 mt-4 mt-md-0">
+      <ul class="d-block d-md-flex list-style-none">
+        
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+    <main class="site-content">
+      <div class="container-lg p-responsive">
+  <div class="markdown-body d-flex flex-wrap gutter">
+    
+<div class="col-md-6 col-12">
+
+<h2 id="migrating">Migrating</h2>
+
+<h3 id="github-importer">GitHub importer</h3>
+
+<p>For Internet-accessible projects, GitHub.com provides Importer for automatic migration and repository creation from Subversion, Team Foundation Server, Mercurial, or alternatively-hosted Git version controlled projects.</p>
+
+<p>The process is as simple, needing only you to sign into your GitHub account, if you aren’t already, entering your existing project’s version control URL in the repository field, and initiating the conversion.</p>
+
+<p>Depending on the detected version control system, Importer may request additional information for migration. This includes a mapping file for associating Subversion usernames with Git fields.</p>
+
+<p>Read more about how to import your project into GitHub by looking at the full <a href="https://docs.github.com/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer">GitHub Importer documentation</a>.</p>
+
+<h3 id="svn2git-utility">SVN2Git Utility</h3>
+
+<p>When access limitations or non-public Subversion repositories need porting to Git, the SVN2Git utility is the command line utility of choice and provides control through every step of the process.</p>
+
+<p>Subversion presents distinct differences in structure to that of a Git repository, and SVN2Git provides the flexibility and configuration for traditional and custom Subversion layouts. This ensures the resulting Git repository aligns with standard best practices for commits, branches, and tags for the entire project’s history.</p>
+
+<p>Notable features of SVN2Git include:</p>
+
+<ul>
+  <li>Converting all SVN conventions to traditional Git structure
+- Providing SVN users field to  name and email data in Git commits</li>
+  <li>Permitting exclusion patterns for precise Git repository content</li>
+</ul>
+
+<p>Learn more about SVN2Git at the project’s official home page:</p>
+
+<p><a href="https://github.com/nirvdrum/svn2git">https://github.com/nirvdrum/svn2git</a></p>
+
+</div>
+
+<div class="col-md-6 col-12">
+
+<h2 id="bridging">Bridging</h2>
+
+<h3 id="leveraging-gits-support-of-svn">Leveraging Git’s support of SVN</h3>
+
+<p>Often times, during a transition to Git, the Subversion infrastructure remains in place while users become acquainted with local Git repository interactions, local workflows, and desktop applications.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">git svn</code> command permits users to synchronize with a centralized Subversion repository host while taking advantage of all the benefits local Git command line and graphical clients have to offer.</p>
+
+<p>To acquire a Subversion repository as a resulting local Git repository, download the project in its entirety with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git svn clone [svn-repo-url] --stdlayout
+</code></pre></div></div>
+
+<p>Make certain you are familiar with the targeted Subversion repository’s structure and whether it follows the standard layout or not. For non-traditional <code class="language-plaintext highlighter-rouge">trunk</code>, <code class="language-plaintext highlighter-rouge">branches</code>, and <code class="language-plaintext highlighter-rouge">tags</code> layouts, the following option switches should be specified during the <code class="language-plaintext highlighter-rouge">svn clone</code>:</p>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">T [trunk]</code> for alternate main source convention</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">b [branches]</code> for alternate branch location</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">t [tags]</code> for alternate tag structure location</li>
+</ul>
+
+<p>Once the clone operation completes, you can proceed with any local Git interactions on the command line or with graphical clients.</p>
+
+<h3 id="synchronizing-with-subversion">Synchronizing with Subversion</h3>
+
+<p>Publishing local Git history back to a central Subversion repository acquired with git svn clone is performed with one command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git svn dcommit
+</code></pre></div></div>
+
+<p>If the hosted Subversion repository’s history possesses commits not yet in the local Git repository,  the <code class="language-plaintext highlighter-rouge">dcommit</code> operation will be rejected until the commits are acquired with this command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git svn rebase
+</code></pre></div></div>
+
+<p>Keep in mind this action rewrites your local Git history and your commit identifiers will be different.</p>
+
+</div>
+
+<h2 id="understanding">Understanding</h2>
+
+<p>Subversion and Git share similar vocabularies, but the commonality often is only is command names. Behavior and functionality are quite distinct given the unique qualities Git provides as a distributed version control system when compared to the centralized aspects of Subversion.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>SVN command</th>
+      <th>Git command</th>
+      <th>Git behavior</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>Report the state of working tree</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">add</code></td>
+      <td><code class="language-plaintext highlighter-rouge">add</code></td>
+      <td>Required for each path before making a commit</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">commit</code></td>
+      <td><code class="language-plaintext highlighter-rouge">commit</code></td>
+      <td>Store prepared changes in local revision history</td>
+    </tr>
+    <tr>
+      <td>
+<code class="language-plaintext highlighter-rouge">rm</code>, <code class="language-plaintext highlighter-rouge">delete</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">rm</code></td>
+      <td>Prepare paths for deletion in next commit</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">move</code></td>
+      <td><code class="language-plaintext highlighter-rouge">mv</code></td>
+      <td>Prepare relocated content for next commit</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">checkout</code></td>
+      <td><code class="language-plaintext highlighter-rouge">clone</code></td>
+      <td>Acquire the entire history of a project locally for the first time</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">branch</code></td>
+      <td>Create local context for commits</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">merge</code></td>
+      <td>Join branch histories and changes to working tree</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">log</code></td>
+      <td>No network required</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">push</code></td>
+      <td>Upload commit history to GitHub/centralized Git host</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">pull</code></td>
+      <td>Download and integrate GitHub repository history with local on</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><code class="language-plaintext highlighter-rouge">fetch</code></td>
+      <td>Download GitHub repository history with no other action</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer class="color-bg-subtle border-top py-4 color-fg-muted text-center mt-6 flex-none">
+  <span aria-label="Made with love by GitHub and friends">
+    <a href="https://github.com/github/training-kit" class="color-fg-default mb-2">
+      Made with <img class="emoji" title=":heart:" alt=":heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> by <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20">s and friends
+    </a>
+  </span>
+  <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
+    <a href="/training-kit/preview/test-preview-fix/feed.xml" aria-label="Feed xml" class="d-flex flex-items-center color-fg-muted text-uppercase mr-4">
+      <div class="d-flex mr-1"><svg class="octicon octicon-rss" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.002 2.725a.75.75 0 01.797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 11-1.497.098 10.502 10.502 0 00-9.776-9.776.75.75 0 01-.7-.798zM2 13a1 1 0 112 0 1 1 0 01-2 0zm.84-5.95a.75.75 0 00-.179 1.489c2.509.3 4.5 2.291 4.8 4.8a.75.75 0 101.49-.178A7.003 7.003 0 002.838 7.05z"></path></svg></div>
+      
+    </a>
+    <a href="https://github.community" class="d-flex flex-items-center color-fg-muted text-uppercase"><div class="d-flex mr-1"><svg class="octicon octicon-organization" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"></path></svg></div> Community</a>
+  </div>
+
+  <p>© 2025 GitHub, Inc.   <a href="https://jekyllrb.com" rel="nofollow" class="color-fg-default">Jekyll</a> &amp;
+    <a href="https://github.com/primer/primer-css" rel="nofollow" class="color-fg-default">Primer</a>.
+  </p>
+</footer>
+
+  </body>
+</html>

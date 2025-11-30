@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+  <meta charset="utf-8">
+  <link href="/training-kit/preview/test-preview-fix/feed.xml" type="application/atom+xml" rel="alternate" title="GitHub Cheatsheets Feed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="/training-kit/preview/test-preview-fix/assets/css/index.css">
+
+  
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>דף תזכורת Git של GitHub  GitHub Cheatsheets</title>
+
+
+
+
+
+
+<meta name="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="GitHub Cheatsheets">
+<meta property="og:title" content="דף תזכורת Git של GitHub">
+
+
+  <link rel="canonical" href="https://training.github.com/training-kit/preview/test-preview-fix/downloads/he/github-git-cheat-sheet/">
+  <meta property="og:url" content="https://training.github.com/training-kit/preview/test-preview-fix/downloads/he/github-git-cheat-sheet/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+</head>
+
+
+  <body style="min-height: 100vh;" class="d-flex flex-column">
+    
+
+
+<div class="bg-blue-darker py-3 f5 flex-none color-fg-on-emphasis">
+  <header class="container-lg p-responsive site-header js-site-header d-block clearfix">
+    <a class="no-underline color-fg-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="/training-kit/preview/test-preview-fix/" aria-label="Git Cheat Sheets Main Page">
+      <div class="mr-3"><svg class="octicon octicon-mark-github" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></div>
+      
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-site-header-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg class="octicon octicon-three-bars" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+    </button>
+
+    <nav class="site-header-menu float-none float-md-right py-1 mt-4 mt-md-0">
+      <ul class="d-block d-md-flex list-style-none">
+        
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+    <main class="site-content">
+      <div class="container-lg p-responsive">
+  <div class="markdown-body d-flex flex-wrap gutter">
+    
+<div class="col-md-6">
+
+<h2 dir="rtl">התקנה</h2>
+
+<h3 dir="rtl">GitHub Desktop</h3>
+<p dir="rtl"><a href="https://desktop.github.com">desktop.github.com</a></p>
+
+<h3 dir="rtl">Git לכל הפלטפורמות</h3>
+<p dir="rtl"><a href="https://git-scm.com">git-scm.com</a></p>
+
+<h2 dir="rtl">הגדרת הכלים</h2>
+<p dir="rtl">הגדרת מידע משתמש עבור כל המאגרים המקומיים</p>
+
+<p align="right"><code>$ git config --global user.name "[שם]"</code></p>
+
+<p dir="rtl">מגדיר את השם שתרצו שיופיע בפעולות הקומיט שלכם</p>
+
+<p align="right"><code>$ git config --global user.email "[כתובת דוא״ל]"</code></p>
+
+<p dir="rtl">מגדיר את כתובת הדוא״ל שתרצו שתופיע בפעולות הקומיט שלכם</p>
+
+<p align="right"><code>$ git config --global color.ui auto</code></p>
+
+<p dir="rtl">מפעיל צביעה שימושית של פלט שורת הפקודה</p>
+
+<h2 dir="rtl">ענפים (Branches)</h2>
+
+<p dir="rtl">ענפים הם חלק מהותי בעבודה עם Git. כל קומיט שתבצעו ייעשה על הענף שאתם ״מצ׳ק-אאוטד״ אליו כרגע. השתמשו ב-<code>git status</code> כדי לראות איזה ענף זה.</p>
+
+<p align="right"><code>$ git branch [שם-ענף]</code></p>
+
+<p dir="rtl">יוצר ענף חדש</p>
+
+<p align="right"><code>$ git switch -c [שם-ענף]</code></p>
+
+<p dir="rtl">עובר לענף המצוין ומעדכן את תיקיית העבודה</p>
+
+<p align="right"><code>$ git merge [ענף]</code></p>
+
+<p dir="rtl">משלב את ההיסטוריה של הענף המצוין לענף הנוכחי. זה בדרך כלל נעשה ב-pull requests, אבל זו פעולת Git חשובה.</p>
+
+<p align="right"><code>$ git branch -d [שם-ענף]</code></p>
+
+<p dir="rtl">מוחק את הענף המצוין</p>
+
+
+</div>
+
+<div class="col-md-6">
+
+<h2 dir="rtl">יצירת מאגרים</h2>
+
+<p dir="rtl">מאגר חדש יכול להיווצר מקומית, או שאפשר לשכפל מאגר קיים. כשמאגר מאותחל מקומית, צריך לדחוף אותו ל-GitHub אחר כך.</p>
+
+<p align="right"><code>$ git init</code></p>
+
+<p dir="rtl">הפקודה git init הופכת תיקייה קיימת למאגר Git חדש בתוך התיקייה שבה אתם מריצים את הפקודה הזו. אחרי השימוש בפקודה <code>git init</code>, קשרו את המאגר המקומי למאגר GitHub ריק באמצעות הפקודה הבאה:</p>
+
+<p align="right"><code>$ git remote add origin [url]</code></p>
+
+<p dir="rtl">מציין את המאגר המרוחק עבור המאגר המקומי שלכם. ה-url מצביע על מאגר ב-GitHub.</p>
+
+<p align="right"><code>$ git clone [url]</code></p>
+
+<p dir="rtl">משכפל (מוריד) מאגר שכבר קיים ב-GitHub, כולל כל הקבצים, הענפים והקומיטים</p>
+
+<h2 dir="rtl">קובץ ה-.gitignore</h2>
+
+<p dir="rtl">לפעמים כדאי להחריג קבצים ממעקב ב-Git. זה בדרך כלל נעשה בקובץ מיוחד בשם <code dir="ltr">.gitignore</code>. תוכלו למצוא תבניות שימושיות לקבצי <code dir="ltr">.gitignore</code> ב-<a href="https://github.com/github/gitignore">github.com/github/gitignore</a>.</p>
+
+<h2 dir="rtl">סנכרון שינויים</h2>
+
+<p dir="rtl">סנכרון המאגר המקומי שלכם עם המאגר המרוחק ב-GitHub.com</p>
+
+<p align="right"><code>$ git fetch</code></p>
+
+<p dir="rtl">מוריד את כל ההיסטוריה מענפי המעקב המרוחקים</p>
+
+<p align="right"><code>$ git merge</code></p>
+
+<p dir="rtl">משלב ענפי מעקב מרוחקים לענף המקומי הנוכחי</p>
+
+<p align="right"><code>$ git push</code></p>
+
+<p dir="rtl">מעלה את כל הקומיטים של הענף המקומי ל-GitHub</p>
+
+<p align="right"><code>$ git pull</code></p>
+
+<p dir="rtl">מעדכן את ענף העבודה המקומי הנוכחי עם כל הקומיטים החדשים מהענף המרוחק המתאים ב-GitHub. <code>git pull</code> היא שילוב של <code>git fetch</code> ו-<code>git merge</code></p>
+
+
+</div>
+<div class="clearfix"></div>
+
+<div class="col-md-6">
+
+<h2 dir="rtl">ביצוע שינויים</h2>
+
+<p dir="rtl">עיון ובדיקת התפתחות קבצי הפרויקט</p>
+
+<p align="right"><code>$ git log</code></p>
+
+<p dir="rtl">מציג את היסטוריית הגרסאות עבור הענף הנוכחי</p>
+
+<p align="right"><code>$ git log --follow [קובץ]</code></p>
+
+<p dir="rtl">מציג את היסטוריית הגרסאות עבור קובץ, כולל שינויי שם (עובד רק עבור קובץ בודד)</p>
+
+<p align="right"><code>$ git diff [ענף-ראשון]...[ענף-שני]</code></p>
+
+<p dir="rtl">מציג הבדלי תוכן בין שני ענפים</p>
+
+<p align="right"><code>$ git show [קומיט]</code></p>
+
+<p dir="rtl">מציג מטא-דאטה ושינויי תוכן של הקומיט המצוין</p>
+
+<p align="right"><code>$ git add [קובץ]</code></p>
+
+<p dir="rtl">מכין את הקובץ להכנסה לניהול גרסאות (staging)</p>
+
+<p align="right"><code>$ git commit -m "[הודעה תיאורית]"</code></p>
+
+<p dir="rtl">שומר את צילומי הקבצים באופן קבוע בהיסטוריית הגרסאות</p>
+
+<h2 dir="rtl">ביטול קומיטים</h2>
+
+<p dir="rtl">מחיקת טעויות ויצירת היסטוריה חלופית</p>
+
+<p align="right"><code>$ git reset [קומיט]</code></p>
+
+<p dir="rtl">מבטל את כל הקומיטים אחרי <code>[קומיט]</code>, תוך שמירה על השינויים מקומית</p>
+
+<p align="right"><code>$ git reset --hard [קומיט]</code></p>
+
+<p dir="rtl">מוחק את כל ההיסטוריה והשינויים חזרה לקומיט המצוין</p>
+
+<blockquote dir="rtl">
+<p dir="rtl">אזהרה! שינוי ההיסטוריה יכול להיות בעייתי. אם צריך לשנות קומיטים שכבר קיימים ב-GitHub (המאגר המרוחק), המשיכו בזהירות. אם צריכים עזרה, פנו ל-<a href="https://github.community">github.community</a> או צרו קשר עם התמיכה.</p>
+</blockquote>
+
+
+</div>
+
+<div class="col-md-6">
+
+<h2 dir="rtl">מילון מונחים</h2>
+
+<ul dir="rtl">
+<li>
+<strong>git</strong>: מערכת קוד פתוח מבוזרת לניהול גרסאות</li>
+<li>
+<strong>GitHub</strong>: פלטפורמה לאחסון ושיתוף פעולה במאגרי Git</li>
+<li>
+<strong>commit (קומיט)</strong>: אובייקט Git, צילום של המאגר שלכם כולו דחוס ל-SHA</li>
+<li>
+<strong>branch (ענף)</strong>: מצביע קל משקל ומטולטל לקומיט</li>
+<li>
+<strong>clone (שכפול)</strong>: גרסה מקומית של מאגר, כולל כל הקומיטים והענפים</li>
+<li>
+<strong>remote (מרוחק)</strong>: מאגר משותף ב-GitHub שכל חברי הצוות משתמשים בו כדי להחליף שינויים</li>
+<li>
+<strong>fork (פורק)</strong>: עותק של מאגר ב-GitHub בבעלות משתמש אחר</li>
+<li>
+<strong>pull request</strong>: מקום להשוות ולדון בהבדלים שהוצגו בענף עם ביקורות, הערות, בדיקות משולבות ועוד</li>
+<li>
+<strong>HEAD</strong>: מייצג את תיקיית העבודה הנוכחית שלכם, מצביע ה-HEAD יכול לעבור לענפים, תגים או קומיטים שונים בשימוש ב-<code>git switch</code>
+</li>
+</ul>
+
+
+</div>
+<div class="clearfix"></div>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer class="color-bg-subtle border-top py-4 color-fg-muted text-center mt-6 flex-none">
+  <span aria-label="Made with love by GitHub and friends">
+    <a href="https://github.com/github/training-kit" class="color-fg-default mb-2">
+      Made with <img class="emoji" title=":heart:" alt=":heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> by <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20">s and friends
+    </a>
+  </span>
+  <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
+    <a href="/training-kit/preview/test-preview-fix/feed.xml" aria-label="Feed xml" class="d-flex flex-items-center color-fg-muted text-uppercase mr-4">
+      <div class="d-flex mr-1"><svg class="octicon octicon-rss" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.002 2.725a.75.75 0 01.797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 11-1.497.098 10.502 10.502 0 00-9.776-9.776.75.75 0 01-.7-.798zM2 13a1 1 0 112 0 1 1 0 01-2 0zm.84-5.95a.75.75 0 00-.179 1.489c2.509.3 4.5 2.291 4.8 4.8a.75.75 0 101.49-.178A7.003 7.003 0 002.838 7.05z"></path></svg></div>
+      
+    </a>
+    <a href="https://github.community" class="d-flex flex-items-center color-fg-muted text-uppercase"><div class="d-flex mr-1"><svg class="octicon octicon-organization" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"></path></svg></div> Community</a>
+  </div>
+
+  <p>© 2025 GitHub, Inc.   <a href="https://jekyllrb.com" rel="nofollow" class="color-fg-default">Jekyll</a> &amp;
+    <a href="https://github.com/primer/primer-css" rel="nofollow" class="color-fg-default">Primer</a>.
+  </p>
+</footer>
+
+  </body>
+</html>

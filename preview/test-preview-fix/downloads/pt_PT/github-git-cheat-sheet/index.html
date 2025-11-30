@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+  <meta charset="utf-8">
+  <link href="/training-kit/preview/test-preview-fix/feed.xml" type="application/atom+xml" rel="alternate" title="GitHub Cheatsheets Feed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="/training-kit/preview/test-preview-fix/assets/css/index.css">
+
+  
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Folheto de ajuda para Git do GitHub (pt-PT) - GitHub Cheatsheets</title>
+
+
+
+
+
+
+<meta name="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="description" content="Github Git Cheat Sheets Training Kit">
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="GitHub Cheatsheets">
+<meta property="og:title" content="Folheto de ajuda para Git do GitHub (pt-PT)">
+
+
+  <link rel="canonical" href="https://training.github.com/training-kit/preview/test-preview-fix/downloads/pt_PT/github-git-cheat-sheet/">
+  <meta property="og:url" content="https://training.github.com/training-kit/preview/test-preview-fix/downloads/pt_PT/github-git-cheat-sheet/">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+</head>
+
+
+  <body style="min-height: 100vh;" class="d-flex flex-column">
+    
+
+
+<div class="bg-blue-darker py-3 f5 flex-none color-fg-on-emphasis">
+  <header class="container-lg p-responsive site-header js-site-header d-block clearfix">
+    <a class="no-underline color-fg-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="/training-kit/preview/test-preview-fix/" aria-label="Git Cheat Sheets Main Page">
+      <div class="mr-3"><svg class="octicon octicon-mark-github" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></div>
+      
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-site-header-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg class="octicon octicon-three-bars" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+    </button>
+
+    <nav class="site-header-menu float-none float-md-right py-1 mt-4 mt-md-0">
+      <ul class="d-block d-md-flex list-style-none">
+        
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+    <main class="site-content">
+      <div class="container-lg p-responsive">
+  <div class="markdown-body d-flex flex-wrap gutter">
+    
+<div class="col-md-6">
+
+<h2 id="instalar-o-git">Instalar o Git</h2>
+
+<p>O GitHub disponibiliza clientes desktop que incluem um interface gráfico para as ações mais comuns. Estes clientes também incluem ferramentas para a linha de comandos para cenários mais avançados. Em ambos os casos, os clientes são atualizados automáticamente.</p>
+
+<h3 id="github-para-windows">GitHub para Windows</h3>
+<p><a href="https://windows.github.com">windows.github.com</a></p>
+
+<h3 id="github-para-mac">GitHub para Mac</h3>
+<p><a href="https://mac.github.com">mac.github.com</a></p>
+
+<p>Distribuições de Git para Linux e sistemas POSIX estão disponíveis no site oficial do Git SCM.</p>
+
+<h3 id="git-para-todas-as-plataformas">Git para todas as plataformas</h3>
+<p><a href="https://git-scm.com">git-scm.com</a></p>
+
+<h2 id="configurar-o-git">Configurar o Git</h2>
+<p>Configurar os detalhes de utilizador ao nível do sistema:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.name "[nome]"</code></p>
+
+<p>Configura o nome que ficará associado aos Git commits</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.email "[endereco-de-email]"</code></p>
+
+<p>Configura o email que ficará associado aos Git commits</p>
+
+<h2 id="criar-repositórios">Criar repositórios</h2>
+<p>Criar um novo repositório ou obter um já existente a partir do URL:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git init [nome-do-projeto]</code></p>
+
+<p>Cria um novo repositório local com o nome de projecto especificado</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git clone [url]</code></p>
+
+<p>Faz download de um projeto, incluindo toda a sua história</p>
+
+
+</div>
+
+<div class="col-md-6">
+
+<h2 id="fazer-alterações">Fazer alterações</h2>
+<p>Ver estado das alterações e criar um commit</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git status</code></p>
+
+<p>Lista todos os ficheiros modificados no projecto atual</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git diff</code></p>
+
+<p>Mostra as diferenças linha a linha dos ficheiros alterados (pre-stage)</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git add [ficheiro]</code></p>
+
+<p>Adiciona um ficheiro à área de preparação para que possa ser incluído em commits (staged)</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git diff --staged</code></p>
+
+<p>Mostra as diferenças linha a linha dos ficheiros preparados e alterados (pre-stage)</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git reset [ficheiro]</code></p>
+
+<p>Remove o ficheiro da área de preparação (staged) sem o remover do sistema de ficheiros</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git commit -m "[mensagem descritiva]"</code></p>
+
+<p>Guarda as alterações preparadas permanentemente no histórico de versões</p>
+
+<h2 id="branching-história-paralela">Branching (história paralela)</h2>
+<p>Crie uma versão parelala do histórico de versões para trabalhar em isolamento.</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git branch</code></p>
+
+<p>Lista todos os branches locais no repositório atual</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git branch [nome-do-branch]</code></p>
+
+<p>Cria um novo branch</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git switch -c [nome-do-branch]</code></p>
+
+<p>Muda para o branch especificado e atualiza o diretório de trabalho</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git merge [nome-do-branch]</code></p>
+
+<p>Combina a história do branch especificado com o branch atual</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git branch -d [nome-do-branch]</code></p>
+
+<p>Remove o branch especificado</p>
+
+</div>
+<div class="clearfix"></div>
+
+<div class="col-md-6">
+
+<h2 id="alteração-de-ficheiros">Alteração de ficheiros</h2>
+<p>Mover e remover os ficheiros já versionados</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git rm [ficheiro]</code></p>
+
+<p>Marca o ficheiro para remoção do repositório local e remove o ficheiro do sistema de ficheiros (staged)</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git rm --cached [ficheiro]</code></p>
+
+<p>Remove o ficheiro do controlo de versão mas preserva-o no diretório de trabalho</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git mv [ficheiro-original] [ficheiro-renomeado]</code></p>
+
+<p>Muda o nome do ficheiro e o prepara-o para o commit</p>
+
+<h2 id="ignorar-ficheiros">Ignorar ficheiros</h2>
+<p>Ignore ficheiros e diretórios temporários</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*.log
+build/
+temp-*
+</code></pre></div></div>
+
+<p>Um ficheiro <code class="language-plaintext highlighter-rouge">.gitignore</code> na raiz do projecto previne o versionamento acidental de ficheiros e diretórios correspondentes aos padrões especificados</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git ls-files --others --ignored --exclude-standard</code></p>
+
+<p>Lista todos os ficheiros e directórios ignorados neste projeto</p>
+
+<h2 id="guardar-alteracões-temporariamente">Guardar alteracões temporariamente</h2>
+<p>Guarde e restaure mudanças temporárias</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git stash</code></p>
+
+<p>Armazena temporariamente todos os ficheiros modificados</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git stash pop</code></p>
+
+<p>Restaura os ficheiros previamente guardados na stash</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git stash list</code></p>
+
+<p>Lista todos os conjuntos de alterações na stash</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git stash drop</code></p>
+
+<p>Remove os últimos ficheiros guardados na stash</p>
+
+
+</div>
+
+<div class="col-md-6">
+
+<h2 id="navegar-o-histórico-de-versões">Navegar o histórico de versões</h2>
+<p>Navegue e inspecione a história do projeto</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git log</code></p>
+
+<p>Lista o histórico de versões para o branch atual</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git log --follow [ficheiro]</code></p>
+
+<p>Lista o histórico de versões para um ficheiro, incluindo mudanças de nome</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git diff [primeiro-branch]...[segundo-branch]</code></p>
+
+<p>Mostra a diferença de conteúdo entre dois branches</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git show [commit]</code></p>
+
+<p>Mostra as mudanças de conteúdo e metadada do commit especificado</p>
+
+<h2 id="manipular-a-história-de-versões">Manipular a história de versões</h2>
+<p>Remove commits e refazer a história de versões</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git reset [commit]</code></p>
+
+<p>Aponta o ambiente de trabalho para o commit especificado, preservando alteracões locais e descartando o histórico de versões posteriores.</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git reset --hard [commit]</code></p>
+
+<p>Aponta o ambiente de trabalho para o commit especificado, sem preservar alteracões e descartando o histórico de versões posteriores.</p>
+
+<h2 id="sincronizar-alteracões">Sincronizar alteracões</h2>
+<p>Actualiza e combina alteracões entre repositórios</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git fetch [remote]</code></p>
+
+<p>Faz download de todo o histórico de um repositório remoto</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git merge [remote]/[branch]</code></p>
+
+<p>Combina a história do branch especificado com o branch atual.</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git push [remote] [branch]</code></p>
+
+<p>Envia todos os commits do branch local para o GitHub</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git pull</code></p>
+
+<p>Download e merge num só comando. Igual a executar <code class="language-plaintext highlighter-rouge">git fetch &amp;&amp; git merge</code></p>
+
+
+</div>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer class="color-bg-subtle border-top py-4 color-fg-muted text-center mt-6 flex-none">
+  <span aria-label="Made with love by GitHub and friends">
+    <a href="https://github.com/github/training-kit" class="color-fg-default mb-2">
+      Made with <img class="emoji" title=":heart:" alt=":heart:" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png" height="20" width="20"> by <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20">s and friends
+    </a>
+  </span>
+  <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
+    <a href="/training-kit/preview/test-preview-fix/feed.xml" aria-label="Feed xml" class="d-flex flex-items-center color-fg-muted text-uppercase mr-4">
+      <div class="d-flex mr-1"><svg class="octicon octicon-rss" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.002 2.725a.75.75 0 01.797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 11-1.497.098 10.502 10.502 0 00-9.776-9.776.75.75 0 01-.7-.798zM2 13a1 1 0 112 0 1 1 0 01-2 0zm.84-5.95a.75.75 0 00-.179 1.489c2.509.3 4.5 2.291 4.8 4.8a.75.75 0 101.49-.178A7.003 7.003 0 002.838 7.05z"></path></svg></div>
+      
+    </a>
+    <a href="https://github.community" class="d-flex flex-items-center color-fg-muted text-uppercase"><div class="d-flex mr-1"><svg class="octicon octicon-organization" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 14.25c0 .138.112.25.25.25H4v-1.25a.75.75 0 01.75-.75h2.5a.75.75 0 01.75.75v1.25h2.25a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25h-8.5a.25.25 0 00-.25.25v12.5zM1.75 16A1.75 1.75 0 010 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 00.25-.25V8.285a.25.25 0 00-.111-.208l-1.055-.703a.75.75 0 11.832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0114.25 16h-3.5a.75.75 0 01-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 01-.75-.75V14h-1v1.25a.75.75 0 01-.75.75h-3zM3 3.75A.75.75 0 013.75 3h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 3.75zM3.75 6a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM3 9.75A.75.75 0 013.75 9h.5a.75.75 0 010 1.5h-.5A.75.75 0 013 9.75zM7.75 9a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5zM7 6.75A.75.75 0 017.75 6h.5a.75.75 0 010 1.5h-.5A.75.75 0 017 6.75zM7.75 3a.75.75 0 000 1.5h.5a.75.75 0 000-1.5h-.5z"></path></svg></div> Community</a>
+  </div>
+
+  <p>© 2025 GitHub, Inc.   <a href="https://jekyllrb.com" rel="nofollow" class="color-fg-default">Jekyll</a> &amp;
+    <a href="https://github.com/primer/primer-css" rel="nofollow" class="color-fg-default">Primer</a>.
+  </p>
+</footer>
+
+  </body>
+</html>

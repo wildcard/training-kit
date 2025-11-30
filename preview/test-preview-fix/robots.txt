@@ -1,0 +1,1 @@
+Sitemap: https://training.github.com/training-kit/preview/test-preview-fix/sitemap.xml
