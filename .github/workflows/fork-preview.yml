@@ -35,7 +35,7 @@ jobs:
         run: npm install
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
