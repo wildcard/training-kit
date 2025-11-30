@@ -11,7 +11,7 @@ leadingpath: ../../../
 
 <h3 dir="rtl">GitHub Importer</h3>
 
-<p dir="rtl">עבור פרויקטים נגישים באינטרנט, GitHub.com מספק Importer להעברה אוטומטית ויצירת מאגר מ-Subversion, Team Foundation Server, Mercurial, או פרויקטים מבוססי Git שמתארחים במקומות אחרים.</p>
+<p dir="rtl">עבור פרויקטים נגישים באינטרנט, GitHub.com מספק Importer להעברה אוטומטית ויצירת מאגר (repository) מ-Subversion, Team Foundation Server, Mercurial, או פרויקטים מבוססי Git שמתארחים במקומות אחרים.</p>
 
 <p dir="rtl">התהליך פשוט, צריך רק להתחבר לחשבון GitHub שלכם (אם אתם לא מחוברים כבר), להזין את ה-URL של מערכת ניהול הגרסאות הקיימת של הפרויקט שלכם בשדה המאגר, ולהתחיל את ההמרה.</p>
 

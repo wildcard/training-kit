@@ -77,14 +77,14 @@ git diff --submodule=diff
 </div>
 
 <div class="col-md-12">
-<h1 dir="rtl">שכפול מאגר עם תת-פרויקט</h1>
+<h1 dir="rtl">שכפול מאגר (Repository) עם תת-פרויקט</h1>
 </div>
 
 {% capture submodule %}
 
 <h3 dir="rtl">Submodule</h3>
 
-<p dir="rtl">כדי לשכפל מאגר יחד עם ה-submodules שלו:</p>
+<p dir="rtl">כדי לשכפל מאגר (repository) יחד עם ה-submodules שלו:</p>
 
 <p align="right"><code dir="ltr">git clone --recurse-submodules URL</code></p>
 
