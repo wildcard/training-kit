@@ -52,7 +52,7 @@ leadingpath: ../../../
 
 <p dir="rtl">הפקודה <code>git svn</code> מאפשרת למשתמשים להסתנכרן עם שרת מאגר Subversion מרכזי תוך ניצול כל היתרונות שיש להציע ללקוחות Git מקומיים בשורת פקודה וגרפיים.</p>
 
-<p dir="rtl">כדי לרכוש מאגר Subversion כמאגר Git מקומי שמתקבל, הורידו את הפרויקט במלואו עם הפקודה הזו:</p>
+<p dir="rtl">כדי לשכפל מאגר Subversion כמאגר Git מקומי, הורידו את הפרויקט במלואו עם הפקודה הזו:</p>
 
 <p align="right"><code dir="ltr">git svn clone [svn-repo-url] --stdlayout</code></p>
 
@@ -68,11 +68,11 @@ leadingpath: ../../../
 
 <h3 dir="rtl">סנכרון עם Subversion</h3>
 
-<p dir="rtl">פרסום היסטוריית Git מקומית חזרה למאגר Subversion מרכזי שנרכש עם git svn clone מבוצע עם פקודה אחת:</p>
+<p dir="rtl">פרסום היסטוריית Git מקומית חזרה למאגר Subversion מרכזי שהורד עם git svn clone מבוצע עם פקודה אחת:</p>
 
 <p align="right"><code dir="ltr">git svn dcommit</code></p>
 
-<p dir="rtl">אם ההיסטוריה של מאגר ה-Subversion המתארח מכילה קומיטים שעדיין לא נמצאים במאגר ה-Git המקומי, פעולת ה-<code>dcommit</code> תידחה עד שהקומיטים יירכשו עם הפקודה הזו:</p>
+<p dir="rtl">אם ההיסטוריה של מאגר ה-Subversion המתארח מכילה קומיטים שעדיין לא נמצאים במאגר ה-Git המקומי, פעולת ה-<code>dcommit</code> תידחה עד שהקומיטים יורדו עם הפקודה הזו:</p>
 
 <p align="right"><code dir="ltr">git svn rebase</code></p>
 
@@ -125,7 +125,7 @@ leadingpath: ../../../
 <tr>
 <td><code>checkout</code></td>
 <td><code>clone</code></td>
-<td>רכישת ההיסטוריה השלמה של פרויקט מקומית בפעם הראשונה</td>
+<td>שכפול ההיסטוריה השלמה של פרויקט מקומית בפעם הראשונה</td>
 </tr>
 <tr>
 <td></td>

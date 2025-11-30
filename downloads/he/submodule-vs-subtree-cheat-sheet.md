@@ -18,7 +18,7 @@ leadingpath: ../../../
 
 <p align="right"><code dir="ltr">git commit -m "adding new submodule"</code></p>
 
-<p dir="rtl">הפקודה <code>submodule add</code> מוסיפה קובץ חדש בשם <code dir="ltr">.gitmodules</code> יחד עם תת-תיקייה שמכילה את הקבצים מ-<code>example-submodule</code>. שניהם מתוספים ל-index שלכם (אזור ה-staging) ופשוט צריך לבצע להם קומיט. ההיסטוריה של ה-submodule נשארת עצמאית מפרויקט האב.</p>
+<p dir="rtl">הפקודה <code>submodule add</code> מוסיפה קובץ חדש בשם <code>.gitmodules</code> יחד עם תת-תיקייה שמכילה את הקבצים מ-<code>example-submodule</code>. שניהם מתוספים לאזור ההכנה שלכם (staging area) ופשוט צריך לבצע להם קומיט. ההיסטוריה של ה-submodule נשארת עצמאית מפרויקט האב.</p>
 
 {% endcapture %}
 
@@ -208,7 +208,7 @@ git commit -am "Update submodule"
 
 <p dir="rtl">אם יש לכם יותר מ-submodule אחד, תוכלו להוסיף את הנתיב ל-submodule בסוף הפקודה <code>git submodule update --remote</code> כדי לציין איזה תת-פרויקט לעדכן.</p>
 
-<p dir="rtl">כברירת מחדל, <code>git submodule update --remote</code> יעדכן את ה-submodule לקומיט האחרון על ענף ה-<code>main</code> של ה-remote של ה-submodule.</p>
+<p dir="rtl">כברירת מחדל, <code>git submodule update --remote</code> יעדכן את ה-submodule לקומיט האחרון על הענף <code>main</code> של ה-remote של ה-submodule.</p>
 
 <p dir="rtl">אתם יכולים לשנות את ענף ברירת המחדל לקריאות עתידיות עם:</p>
 
